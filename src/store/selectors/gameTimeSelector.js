@@ -1,0 +1,1 @@
+export const getGameTime = (state) => state.timeGame.time;
