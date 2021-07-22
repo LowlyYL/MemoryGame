@@ -5,7 +5,7 @@ const Greeting = () => {
     return (
         <div className="greeting">
             <img className="greeting-logo" src="img/greeting.png" alt="greeting" />
-            <Button  />
+            <Button str="Sign up" link="/signup" />
         </div>
     )
 }
