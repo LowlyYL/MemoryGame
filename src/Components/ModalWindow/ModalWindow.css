@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.ModalWindow-overlay {
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(33, 28, 28, 0.8);
+}
+
+.ModalWindow {
+    position: relative;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1010;
+    width: 500px;
+    height: 200px;
+    background-color: #fff; 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(297.24deg, #FF8000 10.69%, #000000 33.73%, #190D00 63.93%, #FF8101 84.86%, #000000 85.62%, #000000 85.63%);
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px #000000;
+    border-radius: 50px;
+}
+
+.Title-ModalWindow {
+    border-bottom: 1px solid #fff;;
+    font-size: 30px;
+    margin: 5px 0;
+    color: #fff;
+}
+
+.Text-body-ModalWindow {
+    font-size: 24px;
+    margin: 5px 0;
+    color: #fff;
+}
+.ModalWindow-button {
+    margin: 10px 0 0 0;
+    font-size: 24px;
+    border-radius: 50px;
+    border: none;
+    padding: 6px 12px;
+    cursor: pointer;
+    background-color: #fff;
+}

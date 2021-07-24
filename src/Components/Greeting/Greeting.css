@@ -1,0 +1,12 @@
+.greeting {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(297.24deg, #FF8000 10.69%, #000000 33.73%, #190D00 63.93%, #FF8101 84.86%, #000000 85.62%, #000000 85.63%);
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px #000000;
+}
+.greeting-logo {
+    height: 100%;
+}

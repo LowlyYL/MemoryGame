@@ -1,0 +1,1 @@
+export const getHighScoreData = (state) => state.highScoreData.data;

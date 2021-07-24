@@ -1,0 +1,1 @@
+export const getTimerSwitch = (state) => state.timerSwitch.timer;

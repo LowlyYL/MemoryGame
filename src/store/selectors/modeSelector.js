@@ -1,0 +1,1 @@
+export const getDifficultMode = (state) => state.difficult.difficulty;

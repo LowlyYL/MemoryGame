@@ -1,24 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import Greeting from './Components/Greeting/Greeting';
+import Rules from './Components/Rules/Rules';
+import SignUp from './Components/SignUp/SignUp';
+import GameMain from './Components/GameMain/GameMain';
+import {BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
+import TableHighScore from './Components/TableHighScore/TableHighScore';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Switch>
+          <Route path="/" component={Greeting} exact />
+          <Route path="/signup" component={SignUp} exact />
+          <Route path="/rules" component={Rules} exact />
+          <Route path="/game" component={GameMain} exact />
+          <Route path="/tableHighScore" component={TableHighScore} exact />
+          <Redirect to="/" />
+        </Switch>
+      </div>
+    </BrowserRouter>
   );
 }
 
